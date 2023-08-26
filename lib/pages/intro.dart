@@ -29,20 +29,41 @@ class _IntroPageState extends State<IntroPage> {
                       fit: BoxFit.contain)),
               height: MediaQuery.of(context).size.height * .45,
             ),
-            Text("Book your \nFavourite Stylist",
+            Text("Find your unique \nnail style",
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w800,
                     height: 1.5,
                     fontSize: 22,
                     letterSpacing: 1.3)),
             Text(
-              "Lorem Ipsum is simply a dummy text of the printing and typesetting industry",
+              "",
               textAlign: TextAlign.center,
               style: TextStyle(height: 1.8, letterSpacing: 1.3),
             ),
-            MyButton(btnText: "Get Started",
-            onpressed: () => Navigator.pushNamed(context, UIData.loginPageRoute)),
+
+            Row(children: [
+              new ButtonTheme(
+                minWidth: 500.0,
+                height: 50.0,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25.0)),
+                child: RaisedButton(
+                  onPressed: () {Navigator.pushNamed(context, UIData.loginPageRoute);},
+                  child: Text("Sign In"),
+                ),
+              ),
+              new ButtonTheme(
+                minWidth: 500.0,
+                height: 50.0,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25.0)),
+                child: RaisedButton(
+                  onPressed: () {Navigator.pushNamed(context, UIData.loginPageRoute);},
+                  child: Text("Get Started"),
+                  color: Colors.white,
+                ),
+              )
+            ]),
+
           ],
         ),
       ),

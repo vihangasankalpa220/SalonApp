@@ -72,8 +72,8 @@ class _LoginPageState extends State<LoginPage> {
                         context, MaterialPageRoute(builder: (_) => HomePage()));
                   },
                   child: Text(
-                    'Login',
-                    style: TextStyle(color: Colors.white, fontSize: 25),
+                    'Sign In',
+                    style: TextStyle(color: Colors.black, fontSize: 25),
                   ),
                 ),
               ),
@@ -86,7 +86,7 @@ class _LoginPageState extends State<LoginPage> {
         },
         child: new Padding(
           padding: new EdgeInsets.all(10.0),
-          child: new Text("New User? Signup Here..."),
+          child: new Text("Don't have an account ? Sign up"),
         ),
       ),
             ],

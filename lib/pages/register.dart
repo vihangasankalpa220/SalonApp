@@ -45,8 +45,8 @@ class _RegisterPageState extends State<RegisterPage> {
 
 
                       decoration: InputDecoration(
-                          hintText: 'Enter first Name',
-                          labelText: 'first named',
+                          hintText: 'Name',
+                          labelText: 'Name',
                           prefixIcon: Icon(
                             Icons.person,
                             color: Colors.green,
@@ -58,24 +58,7 @@ class _RegisterPageState extends State<RegisterPage> {
                               BorderRadius.all(Radius.circular(9.0)))),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: TextFormField(
 
-                      decoration: InputDecoration(
-                          hintText: 'Enter last Name',
-                          labelText: 'Last named',
-                          prefixIcon: Icon(
-                            Icons.person,
-                            color: Colors.grey,
-                          ),
-                          errorStyle: TextStyle(fontSize: 18.0),
-                          border: OutlineInputBorder(
-                              borderSide: BorderSide(color: Colors.red),
-                              borderRadius:
-                              BorderRadius.all(Radius.circular(9.0)))),
-                    ),
-                  ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: TextFormField(
@@ -99,10 +82,10 @@ class _RegisterPageState extends State<RegisterPage> {
                     child: TextFormField(
 
                       decoration: InputDecoration(
-                          hintText: 'Mobile',
-                          labelText: 'Mobile',
+                          hintText: 'Password',
+                          labelText: 'Password',
                           prefixIcon: Icon(
-                            Icons.phone,
+                            Icons.password,
                             color: Colors.grey,
                           ),
                           border: OutlineInputBorder(

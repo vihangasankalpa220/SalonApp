@@ -12,7 +12,7 @@ class MyButton extends StatelessWidget {
       width: MediaQuery.of(context).size.width * .5,
       height: 40,
       child: FlatButton(
-        color: UIData.mainColor,
+        color: Colors.white,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25.0)),
         onPressed: onpressed,
         child: Text(btnText, style: TextStyle(color: Colors.white, 

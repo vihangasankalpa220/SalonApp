@@ -41,17 +41,7 @@ class _HomePageState extends State<HomePage> {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              Container(
-                  height: screen_size_height * .2,
-                  width: screen_size_width,
-                  child: ListView(
-                    scrollDirection: Axis.horizontal,
-                    children: <Widget>[
-                      ImageCard(cardImg: "images/braid4.jpg"),
-                      SizedBox(width: 10),
-                      ImageCard(cardImg: "images/braid3.jpg"),
-                    ],
-                  )),
+
               SizedBox(height: 15),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -158,7 +148,7 @@ class _HomePageState extends State<HomePage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Expanded(
-                        child: Text("Hair Specialists",
+                        child: Text("Saloons",
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                             style: TextStyle(
@@ -184,8 +174,33 @@ class _HomePageState extends State<HomePage> {
                       SpecialistColumn(
                           specImg: "images/braid3.jpg",
                           specName: "Patience Roy"),
+                      SizedBox(width: 12),
+                      SpecialistColumn(
+                          specImg: "images/braid2.jpg", specName: "Anny Roy"),
+                      SizedBox(width: 12),
+                      SpecialistColumn(
+                          specImg: "images/braid2.jpg", specName: "Anny Roy"),
+                      SizedBox(width: 12),
+                      SpecialistColumn(
+                          specImg: "images/braid2.jpg", specName: "Anny Roy"),
                     ],
-                  ))
+                  )),
+
+              Container(
+                  height: screen_size_height * .2,
+                  width: screen_size_width,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: <Widget>[
+                      ImageCard(cardImg: "images/braid4.jpg"),
+                      SizedBox(width: 10),
+                      ImageCard(cardImg: "images/braid3.jpg"),
+                    ],
+                  )),
+
+
+
+
             ],
           ),
         ),

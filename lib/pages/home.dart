@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:salon_app/uidata.dart';
 import 'package:salon_app/widgets/image_card.dart';
@@ -16,8 +18,11 @@ class _HomePageState extends State<HomePage> {
     final screen_size_height = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.blue,
         elevation: 0,
+            title: const Text("It's Nail day"),
+        foregroundColor : Colors.black,
+        centerTitle: false,
         leading: IconButton(
             icon: Icon(Icons.short_text, color: Colors.black87),
             onPressed: () {}),

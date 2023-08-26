@@ -14,6 +14,18 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+        elevation: 0,
+        title: const Text("It's Nail day"),
+        foregroundColor : Colors.black,
+        centerTitle: true,
+      ),
+
+
+
+
         body:  SingleChildScrollView(
           child: Column(
             children: <Widget>[

@@ -42,27 +42,42 @@ class _IntroPageState extends State<IntroPage> {
               style: TextStyle(height: 1.8, letterSpacing: 1.3),
             ),
 
-            Row(children: [
-              new ButtonTheme(
-                minWidth: 500.0,
-                height: 50.0,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25.0)),
-                child: RaisedButton(
-                  onPressed: () {Navigator.pushNamed(context, UIData.loginPageRoute);},
-                  child: Text("Sign In"),
-                ),
+            ListTile(
+              title: Row(
+                children: <Widget>[
+                  Expanded(
+              child: Container(
+                  width: MediaQuery.of(context).size.width * .5,
+                  height: 40,
+                      child: RaisedButton(onPressed: () {Navigator.pushNamed(context, UIData.loginPageRoute);},
+                        child: Text("Sign In"),color: Colors.blue,textColor: Colors.black,
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25.0)),
+
+                      )
+
+                  ),
+                  ),
+
+                  Expanded(
+                    child: Container(
+                        width: MediaQuery.of(context).size.width * .5,
+                        height: 40,
+                        child: RaisedButton(onPressed: () {Navigator.pushNamed(context, UIData.loginPageRoute);},
+                          child: Text("Get Started"),color: Colors.white,textColor: Colors.black,
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25.0)),
+
+                        )
+
+                    ),
+                  ),
+
+
+
+
+                ],
               ),
-              new ButtonTheme(
-                minWidth: 500.0,
-                height: 50.0,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25.0)),
-                child: RaisedButton(
-                  onPressed: () {Navigator.pushNamed(context, UIData.loginPageRoute);},
-                  child: Text("Get Started"),
-                  color: Colors.white,
-                ),
-              )
-            ]),
+            )
+
 
           ],
         ),

@@ -101,7 +101,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           // margin: EdgeInsets.fromLTRB(200, 20, 50, 0),
                           child: RaisedButton(
                             child: Text(
-                              'Register',
+                              'Sign Up',
                               style: TextStyle(color: Colors.white, fontSize: 22),
                             ),
                             onPressed: () {
